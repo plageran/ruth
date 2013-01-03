@@ -1,0 +1,108 @@
+manufacter: 		motorola
+model: 			mb511
+hardware:		mapphone30_umts
+board:			ruth
+brand:			moto
+system partition:	187039744 Bytes
+data partition:		179437568 Bytes
+ram:			487272 kB
+icc card:		false
+
+device id:		353646040104658
+android id:		unknown
+phone id:		34ce000400000000040395021400900a
+sim serial:
+phone number:
+device serial:		TA418006B6
+
+Operator Numeric:	65501
+Phone type:		GSM
+network type: 		UMTS
+baseband:		EPU93_U_02.36.00
+service mode:		auto
+
+incremental version:	1289453686
+build fingerprint:	MOTO/MB511_RTCEE/umts_ruth/ruth:2.1-update1/rutem_U3_01.14.2/1289453686:user/release-keys
+kernel:			2.6.29-omap1
+ril version:		android moto-ril 1.0
+opengl version:		131072
+software version:	3536460401046531
+
+Display
+diagonal:		4.17"
+width:			3.33"
+height:			2.5"
+width:			320 pixel
+height:			240 pixel
+density:		low
+dpi:			120
+actual dpi X		96.0
+actual dpi Y		96.0
+max simultaneous touch	2
+refresh rate		68.0
+
+cpu
+description		ARMv7 Processor rev 3 (v7l)
+features		swp half thumb fastmult vfp edsp neon vfpv3
+bogomips		718.88
+abi			armeabi-v7a
+architecture		7
+implementer		0x41
+variant			0x1
+part			0xc08
+revision		3
+
+sensors
+accelerometer
+name			KXTF9 3-axis acc
+default			true
+vendor			Kionix
+version			1
+power			0.25
+resolution		0.009810001
+max range		39.24
+
+magnetic field
+name			AK8973 3-axis magnetic field sensor
+default			true
+vendor			Asahi Kasei
+version			1
+power			6.8
+resolution		0.0625
+max range		2000.0
+
+temperature
+name			AK8973 temperature sensor
+default			true
+vendor			Asahi Kasei
+version			1
+power			3.0
+resolution		1.6
+max range		115.0
+
+proximity
+name			SFH7743 proximity sensor
+default			true
+vendor			OSRAM optp semiconductores
+version			1
+power			0.045
+resolution		2.1474836E9
+max range		2.1474836E9
+
+orientation
+name			orientation sensor
+default			true
+vendor			Asahi Kasei
+version			1
+power			7.05
+resolution		0.015625
+max range		360.0
+
+light
+name			ambient light sensor
+default			true
+vendor			unknown
+version			1
+power			0.0
+resolution		1.0
+max range		27000.0

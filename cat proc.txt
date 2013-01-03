@@ -1,0 +1,1578 @@
+netmux_config_client0	n
+netmux_config_host0	n
+linkdriver
+Linkdriver Status:
+       	mux_deferred:      0
+       	queue_len: 0
+       	linkdriver log status: 0
+
+netmuxlog
+0
+
+binder
+invalid length
+	
+mtpctl
+invalid length
+
+mtd
+dev:    size   erasesize  name
+mtd0: 00180000 00020000 "pds"
+mtd1: 00060000 00020000 "cid"
+mtd2: 000a0000 00020000 "logo"
+mtd3: 00060000 00020000 "misc"
+mtd4: 00380000 00020000 "boot"
+mtd5: 00480000 00020000 "recovery"
+mtd6: 008e0000 00020000 "cdrom"
+mtd7: 0b260000 00020000 "system"
+mtd8: 080c0000 00020000 "cache"
+mtd9: 0ab20000 00020000 "userdata"
+mtd10: 00200000 00020000 "kpanic"
+
+uid_stat
+invalid length
+
+pvr
+invalid length
+
+sysrq-trigger
+invalid length
+
+partitions
+major minor  #blocks  name
+
+  31        0       1536 mtdblock0
+  31        1        384 mtdblock1
+  31        2        640 mtdblock2
+  31        3        384 mtdblock3
+  31        4       3584 mtdblock4
+  31        5       4608 mtdblock5
+  31        6       9088 mtdblock6
+  31        7     182656 mtdblock7
+  31        8     131840 mtdblock8
+  31        9     175232 mtdblock9
+  31       10       2048 mtdblock10
+ 179        0    7774208 mmcblk0
+ 179        1    7259136 mmcblk0p1
+ 179        2     514048 mmcblk0p2
+
+diskstats
+   1       0 ram0 0 0 0 0 0 0 0 0 0 0 0
+   1       1 ram1 0 0 0 0 0 0 0 0 0 0 0
+   1       2 ram2 0 0 0 0 0 0 0 0 0 0 0
+   1       3 ram3 0 0 0 0 0 0 0 0 0 0 0
+   1       4 ram4 0 0 0 0 0 0 0 0 0 0 0
+   1       5 ram5 0 0 0 0 0 0 0 0 0 0 0
+   1       6 ram6 0 0 0 0 0 0 0 0 0 0 0
+   1       7 ram7 0 0 0 0 0 0 0 0 0 0 0
+   1       8 ram8 0 0 0 0 0 0 0 0 0 0 0
+   1       9 ram9 0 0 0 0 0 0 0 0 0 0 0
+   1      10 ram10 0 0 0 0 0 0 0 0 0 0 0
+   1      11 ram11 0 0 0 0 0 0 0 0 0 0 0
+   1      12 ram12 0 0 0 0 0 0 0 0 0 0 0
+   1      13 ram13 0 0 0 0 0 0 0 0 0 0 0
+   1      14 ram14 0 0 0 0 0 0 0 0 0 0 0
+   1      15 ram15 0 0 0 0 0 0 0 0 0 0 0
+  31       0 mtdblock0 0 0 0 0 0 0 0 0 0 0 0
+  31       1 mtdblock1 0 0 0 0 0 0 0 0 0 0 0
+  31       2 mtdblock2 0 0 0 0 0 0 0 0 0 0 0
+  31       3 mtdblock3 0 0 0 0 0 0 0 0 0 0 0
+  31       4 mtdblock4 0 0 0 0 0 0 0 0 0 0 0
+  31       5 mtdblock5 0 0 0 0 0 0 0 0 0 0 0
+  31       6 mtdblock6 0 0 0 0 0 0 0 0 0 0 0
+  31       7 mtdblock7 0 0 0 0 0 0 0 0 0 0 0
+  31       8 mtdblock8 0 0 0 0 0 0 0 0 0 0 0
+  31       9 mtdblock9 0 0 0 0 0 0 0 0 0 0 0
+  31      10 mtdblock10 0 0 0 0 0 0 0 0 0 0 0
+ 179       0 mmcblk0 3384 20875 86877 20632 795 322 3656 174968 0 45453 195601
+ 179       1 mmcblk0p1 3355 19865 85747 20484 794 322 3655 174960 0 45359 195445
+
+ 179       2 mmcblk0p2 21 1005 1026 132 1 0 1 7 0 78 140
+
+crypto
+name         : ecb(arc4)
+driver       : ecb(arc4-generic)
+module       : kernel
+priority     : 0
+refcnt       : 1
+selftest     : passed
+type         : blkcipher
+blocksize    : 1
+min keysize  : 1
+max keysize  : 256
+ivsize       : 0
+geniv        : <default>
+
+name         : stdrng
+driver       : krng
+module       : kernel
+priority     : 200
+refcnt       : 1
+selftest     : passed
+type         : rng
+seedsize     : 0
+
+name         : crc32c
+driver       : crc32c-generic
+module       : kernel
+priority     : 100
+refcnt       : 2
+selftest     : passed
+type         : shash
+blocksize    : 1
+digestsize   : 4
+descsize     : 4
+
+name         : deflate
+driver       : deflate-generic
+module       : kernel
+priority     : 0
+refcnt       : 1
+selftest     : passed
+type         : compression
+
+name         : arc4
+driver       : arc4-generic
+module       : kernel
+priority     : 0
+refcnt       : 1
+selftest     : passed
+type         : cipher
+blocksize    : 1
+min keysize  : 1
+max keysize  : 256
+
+name         : aes
+driver       : aes-generic
+module       : kernel
+priority     : 100
+refcnt       : 1
+selftest     : passed
+type         : cipher
+blocksize    : 16
+min keysize  : 16
+max keysize  : 32
+
+name         : des3_ede
+driver       : des3_ede-generic
+module       : kernel
+priority     : 0
+refcnt       : 1
+selftest     : passed
+type         : cipher
+blocksize    : 8
+min keysize  : 24
+max keysize  : 24
+
+name         : des
+driver       : des-generic
+module       : kernel
+priority     : 0
+refcnt       : 1
+selftest     : passed
+type         : cipher
+blocksize    : 8
+min keysize  : 8
+max keysize  : 8
+
+name         : sha1
+driver       : sha1-generic
+module       : kernel
+priority     : 0
+refcnt       : 1
+selftest     : passed
+type         : shash
+blocksize    : 64
+digestsize   : 20
+descsize     : 96
+
+name         : md5
+driver       : md5-generic
+module       : kernel
+priority     : 0
+refcnt       : 1
+selftest     : passed
+type         : shash
+blocksize    : 64
+digestsize   : 16
+descsize     : 88
+
+yaffs
+YAFFS built:Nov 11 2010 11:48:43
+$Id$
+$Id$
+
+Device 0 "system"
+startBlock......... 0
+endBlock........... 1426
+totalBytesPerChunk. 2048
+nDataBytesPerChunk. 2048
+chunkGroupBits..... 0
+chunkGroupSize..... 1
+nErasedBlocks...... 149
+nReservedBlocks.... 5
+blocksInCheckpoint. 3
+nTnodesCreated..... 6500
+nFreeTnodes........ 73
+nObjectsCreated.... 1300
+nFreeObjects....... 86
+nFreeChunks........ 11080
+nPageWrites........ 0
+nPageReads......... 45558
+nBlockErasures..... 0
+nGCCopies.......... 0
+garbageCollections. 0
+passiveGCs......... 0
+nRetriedWrites..... 0
+nShortOpCaches..... 10
+nRetireBlocks...... 0
+eccFixed........... 0
+eccUnfixed......... 0
+tagsEccFixed....... 0
+tagsEccUnfixed..... 0
+cacheHits.......... 0
+nDeletedFiles...... 0
+nUnlinkedFiles..... 45
+nBackgroudDeletions 0
+useNANDECC......... 1
+isYaffs2........... 1
+inbandTags......... 0
+doesTagsEcc........ 1
+
+Device 1 "userdata"
+startBlock......... 0
+endBlock........... 1368
+totalBytesPerChunk. 2048
+nDataBytesPerChunk. 2048
+chunkGroupBits..... 0
+chunkGroupSize..... 1
+nErasedBlocks...... 27
+nReservedBlocks.... 5
+blocksInCheckpoint. 0
+nTnodesCreated..... 3000
+nFreeTnodes........ 67
+nObjectsCreated.... 1100
+nFreeObjects....... 14
+nFreeChunks........ 52765
+nPageWrites........ 189402
+nPageReads......... 154927
+nBlockErasures..... 3150
+nGCCopies.......... 46027
+garbageCollections. 2707
+passiveGCs......... 1388
+nRetriedWrites..... 0
+nShortOpCaches..... 10
+nRetireBlocks...... 0
+eccFixed........... 0
+eccUnfixed......... 0
+tagsEccFixed....... 0
+tagsEccUnfixed..... 0
+cacheHits.......... 9209
+nDeletedFiles...... 0
+nUnlinkedFiles..... 3897
+nBackgroudDeletions 0
+useNANDECC......... 1
+isYaffs2........... 1
+inbandTags......... 0
+doesTagsEcc........ 1
+
+Device 2 "cache"
+startBlock......... 0
+endBlock........... 1029
+totalBytesPerChunk. 2048
+nDataBytesPerChunk. 2048
+chunkGroupBits..... 0
+chunkGroupSize..... 1
+nErasedBlocks...... 1028
+nReservedBlocks.... 5
+blocksInCheckpoint. 1
+nTnodesCreated..... 0
+nFreeTnodes........ 0
+nObjectsCreated.... 200
+nFreeObjects....... 95
+nFreeChunks........ 65853
+nPageWrites........ 21
+nPageReads......... 14
+nBlockErasures..... 0
+nGCCopies.......... 0
+garbageCollections. 0
+passiveGCs......... 0
+nRetriedWrites..... 0
+nShortOpCaches..... 10
+nRetireBlocks...... 0
+eccFixed........... 0
+eccUnfixed......... 0
+tagsEccFixed....... 0
+tagsEccUnfixed..... 0
+cacheHits.......... 0
+nDeletedFiles...... 0
+nUnlinkedFiles..... 0
+nBackgroudDeletions 0
+useNANDECC......... 1
+isYaffs2........... 1
+inbandTags......... 0
+doesTagsEcc........ 1
+
+Device 3 "cdrom"
+startBlock......... 0
+endBlock........... 70
+totalBytesPerChunk. 2048
+nDataBytesPerChunk. 2048
+chunkGroupBits..... 0
+chunkGroupSize..... 1
+nErasedBlocks...... 11
+nReservedBlocks.... 5
+blocksInCheckpoint. 1
+nTnodesCreated..... 300
+nFreeTnodes........ 31
+nObjectsCreated.... 100
+nFreeObjects....... 95
+nFreeChunks........ 741
+nPageWrites........ 0
+nPageReads......... 1
+nBlockErasures..... 0
+nGCCopies.......... 0
+garbageCollections. 0
+passiveGCs......... 0
+nRetriedWrites..... 0
+nShortOpCaches..... 10
+nRetireBlocks...... 0
+eccFixed........... 0
+eccUnfixed......... 0
+tagsEccFixed....... 0
+tagsEccUnfixed..... 0
+cacheHits.......... 0
+nDeletedFiles...... 0
+nUnlinkedFiles..... 0
+nBackgroudDeletions 0
+useNANDECC......... 1
+isYaffs2........... 1
+inbandTags......... 0
+doesTagsEcc........ 1
+
+Device 4 "pds"
+startBlock......... 0
+endBlock........... 11
+totalBytesPerChunk. 2048
+nDataBytesPerChunk. 2048
+chunkGroupBits..... 0
+chunkGroupSize..... 1
+nErasedBlocks...... 7
+nReservedBlocks.... 5
+blocksInCheckpoint. 0
+nTnodesCreated..... 100
+nFreeTnodes........ 62
+nObjectsCreated.... 200
+nFreeObjects....... 51
+nFreeChunks........ 638
+nPageWrites........ 42
+nPageReads......... 166
+nBlockErasures..... 1
+nGCCopies.......... 14
+garbageCollections. 1
+passiveGCs......... 0
+nRetriedWrites..... 0
+nShortOpCaches..... 10
+nRetireBlocks...... 0
+eccFixed........... 0
+eccUnfixed......... 0
+tagsEccFixed....... 0
+tagsEccUnfixed..... 0
+cacheHits.......... 0
+nDeletedFiles...... 0
+nUnlinkedFiles..... 4
+nBackgroudDeletions 0
+useNANDECC......... 1
+isYaffs2........... 1
+inbandTags.....#
+
+kpageflags
+[blank screen, no results]
+
+kpagecount
+[blank screen, no results]
+
+kmsg
+[to much results]
+
+version
+Linux version 2.6.29-omap1 (fdc376@zch68lnxdroid12) (gcc version 4.4.0 (GCC) ) #
+1 PREEMPT Thu Nov 11 11:53:28 CST 2010
+
+uptime
+[skipping, not relevant]
+
+stat
+cpu  4711 546 4121 11331 310 74 1 0 0
+cpu0 4711 546 4121 11331 310 74 1 0 0
+intr 64128 0 0 0 0 0 0 0 0 0 0 0 1909 3164 0 0 0 0 0 0 0 0 3564 0 0 0 8859 15 0
+0 0 0 0 0 0 0 10 0 17714 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1774 2571 330 0 0 1
+ 0 0 0 0 0 0 0 0 0 0 488 0 0 0 0 343 1 0 0 0 0 19712 0 0 0 0 0 0 0 0 1314 1248 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 560 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 548 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ctxt 174639
+btime 1347725364
+processes 2059
+procs_running 1
+procs_blocked 0
+
+meminfo
+MemTotal:         487272 kB
+MemFree:          188872 kB
+Buffers:            2668 kB
+Cached:           130840 kB
+SwapCached:            0 kB
+Active:           135580 kB
+Inactive:         107804 kB
+Active(anon):     110476 kB
+Inactive(anon):        0 kB
+Active(file):      25104 kB
+Inactive(file):   107804 kB
+Unevictable:           0 kB
+Mlocked:               0 kB
+SwapTotal:             0 kB
+SwapFree:              0 kB
+Dirty:                 0 kB
+Writeback:             0 kB
+AnonPages:        109888 kB
+Mapped:            68068 kB
+Slab:              11040 kB
+SReclaimable:       4072 kB
+SUnreclaim:         6968 kB
+PageTables:        13492 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:      243636 kB
+Committed_AS:    3915248 kB
+VmallocTotal:     401408 kB
+VmallocUsed:       68832 kB
+VmallocChunk:     316420 kB
+
+loadavg
+0.11 0.47 0.28 1/413 2062
+
+interrupts
+           CPU0
+ 11:       2855        INTC  prcm
+ 12:       3164        INTC  DMA
+ 21:       3564        INTC  SGX ISR
+ 24:          0        INTC  Omap 34xx Camera ISP
+ 25:       8859        INTC  OMAP DSS
+ 26:         15        INTC  DspBridge  mailbox
+ 28:          0        INTC  DspBridge  iommu fault
+ 35:         10        INTC  sim
+ 37:      18890        INTC  gp timer
+ 56:       1774        INTC  i2c_omap
+ 57:       2571        INTC  i2c_omap
+ 58:        330        INTC  omap_hdq
+ 61:          1        INTC  i2c_omap
+ 72:        488        INTC  serial idle
+ 73:          0        INTC  serial idle
+ 74:          0        INTC  serial idle
+ 77:        343        INTC  ehci_hcd:usb1
+ 78:          1        INTC  usbtll
+ 83:      19712        INTC  mmc0
+ 88:          0        INTC  syspanic
+ 92:       2240        INTC  musb_hdrc
+ 93:       2174        INTC  musb_hdrc
+160:        836        GPIO  cpcap-irq
+182:          4        GPIO  kxtf9_irq
+194:          0        GPIO  gpio_kp
+195:          0        GPIO  gpio_kp
+196:          0        GPIO  gpio_kp
+197:          0        GPIO  gpio_kp
+198:          0        GPIO  gpio_kp
+199:          0        GPIO  gpio_kp
+200:          0        GPIO  gpio_kp
+201:          0        GPIO  gpio_kp
+259:        548        GPIO  qtouch_ts_int
+260:          0        GPIO  gpio_keys
+301:          0        GPIO  Remote Wakeup
+323:          0        GPIO  mmc0
+337:          0        GPIO  gpio_keys
+340:          0        GPIO  sfh7743_irq
+Err:          0
+
+devices
+Character devices:
+  1 mem
+  4 ttyS
+  5 /dev/tty
+  5 /dev/console
+  5 /dev/ptmx
+ 10 misc
+ 13 input
+ 14 sound
+ 29 fb
+ 81 video4linux
+ 89 i2c
+ 90 mtd
+108 ppp
+128 ptm
+136 pts
+166 ttyACM
+180 usb
+188 ttyUSB
+189 usb_device
+216 rfcomm
+234 ts0710mux
+240 netmux
+241 direct
+242 modem_pm_driver
+243 sim
+244 ttyGS
+245 usb_endpoint
+246 usbmon
+247 DspBridge
+248 omap-resizer
+249 omap-previewer
+250 hp3a-omap
+251 syspanic
+252 pvrsrvkm
+253 gpio-device
+254 rtc
+
+Block devices:
+  1 ramdisk
+259 blkext
+  7 loop
+ 31 mtdblock
+179 mmc
+
+cpuinfo
+Processor       : ARMv7 Processor rev 3 (v7l)
+BogoMIPS        : 249.96
+Features        : swp half thumb fastmult vfp edsp neon vfpv3
+CPU implementer : 0x41
+CPU architecture: 7
+CPU variant     : 0x1
+CPU part        : 0xc08
+CPU revision    : 3
+
+Hardware        : mapphone30_UMTS
+Revision        : 0000
+Serial          : 0000000000000000
+CPU Tier        : 10
+
+cmdline
+console=/dev/null rw init=/init ip=off brdrev=P0B androidboot.bootloader=0x0000
+mtdparts=omap2-nand.0:1536k@2176k(pds),384k@4480k(cid),640k@6784k(logo),384k(mis
+c),3584k(boot)ro,4608k@15232k(recovery),9088k(cdrom),182656k@29312k(system),1318
+40k@212352k(cache),175232k(userdata),2m@521728k(kpanic) androidboot.mode=reboot
+mem=498M@0x80C00000
+
+locks
+[nothing]
+
+filesystems
+nodev   sysfs
+nodev   rootfs
+nodev   bdev
+nodev   proc
+nodev   cgroup
+nodev   binfmt_misc
+nodev   debugfs
+nodev   sockfs
+nodev   usbfs
+nodev   pipefs
+nodev   anon_inodefs
+nodev   tmpfs
+nodev   inotifyfs
+nodev   devpts
+nodev   ramfs
+        vfat
+        msdos
+        yaffs
+        yaffs2
+
+slabinfo
+slabinfo - version: 2.1
+# name            <active_objs> <num_objs> <objsize> <objperslab> <pagesperslab>
+ : tunables <limit> <batchcount> <sharedfactor> : slabdata <active_slabs> <num_s
+labs> <sharedavail>
+xfrm6_tunnel_spi       0      0     64   59    1 : tunables  120   60    0 : sla
+bdata      0      0      0
+fib6_nodes             1    113     32  113    1 : tunables  120   60    0 : sla
+bdata      1      1      0
+ip6_dst_cache          1     15    256   15    1 : tunables  120   60    0 : sla
+bdata      1      1      0
+ndisc_cache            1     20    192   20    1 : tunables  120   60    0 : sla
+bdata      1      1      0
+RAWv6                  4      6    640    6    1 : tunables   54   27    0 : sla
+bdata      1      1      0
+UDPLITEv6              0      0    640    6    1 : tunables   54   27    0 : sla
+bdata      0      0      0
+UDPv6                  0      0    640    6    1 : tunables   54   27    0 : sla
+bdata      0      0      0
+tw_sock_TCPv6          0      0    128   30    1 : tunables  120   60    0 : sla
+bdata      0      0      0
+request_sock_TCPv6      0      0    128   30    1 : tunables  120   60    0 : sl
+abdata      0      0      0
+TCPv6                  0      0   1216    3    1 : tunables   24   12    0 : sla
+bdata      0      0      0
+xt_hashlimit           0      0     40   92    1 : tunables  120   60    0 : sla
+bdata      0      0      0
+nf_conntrack_expect      0      0    144   27    1 : tunables  120   60    0 : s
+labdata      0      0      0
+nf_conntrack           0      0    208   19    1 : tunables  120   60    0 : sla
+bdata      0      0      0
+flow_cache             0      0     80   48    1 : tunables  120   60    0 : sla
+bdata      0      0      0
+img-mmap             213    402     56   67    1 : tunables  120   60    0 : sla
+bdata      6      6      0
+img-mm               293    468     48   78    1 : tunables  120   60    0 : sla
+bdata      6      6      0
+cfq_io_context         5     40     96   40    1 : tunables  120   60    0 : sla
+bdata      1      1      0
+cfq_queue              5     44     88   44    1 : tunables  120   60    0 : sla
+bdata      1      1      0
+fat_inode_cache     1335   1340    384   10    1 : tunables   54   27    0 : sla
+bdata    134    134      0
+fat_cache            164    290     24  145    1 : tunables  120   60    0 : sla
+bdata      2      2      0
+dquot                  0      0    192   20    1 : tunables  120   60    0 : sla
+bdata      0      0      0
+kioctx                 0      0    192   20    1 : tunables  120   60    0 : sla
+bdata      0      0      0
+kiocb                  0      0    192   20    1 : tunables  120   60    0 : sla
+bdata      0      0      0
+inotify_event_cache      0      0     32  113    1 : tunables  120   60    0 : s
+labdata      0      0      0
+inotify_watch_cache      7     92     40   92    1 : tunables  120   60    0 : s
+labdata      1      1      0
+dnotify_cache          0      0     24  145    1 : tunables  120   60    0 : sla
+bdata      0      0      0
+fasync_cache           0      0     16  203    1 : tunables  120   60    0 : sla
+bdata      0      0      0
+ashmem_range_cache      0      0     32  113    1 : tunables  120   60    0 : sl
+abdata      0      0      0
+ashmem_area_cache     62     78    288   13    1 : tunables   54   27    0 : sla
+bdata      6      6      0
+shmem_inode_cache    644    657    424    9    1 : tunables   54   27    0 : sla
+bdata     73     73      0
+nsproxy                0      0     24  145    1 : tunables  120   60    0 : sla
+bdata      0      0      0
+posix_timers_cache      0      0    112   35    1 : tunables  120   60    0 : sl
+abdata      0      0      0
+uid_cache             43     59     64   59    1 : tunables  120   60    0 : sla
+bdata      1      1      0
+UNIX                  67     70    384   10    1 : tunables   54   27    0 : sla
+bdata      7      7      0
+UDP-Lite               0      0    512    7    1 : tunables   54   27    0 : sla
+bdata      0      0      0
+tcp_bind_bucket        3    203     16  203    1 : tunables  120   60    0 : sla
+bdata      1      1      0
+inet_peer_cache        0      0     64   59    1 : tunables  120   60    0 : sla
+bdata      0      0      0
+secpath_cache          0      0     32  113    1 : tunables  120   60    0 : sla
+bdata      0      0      0
+xfrm_dst_cache         0      0    320   12    1 : tunables   54   27    0 : sla
+bdata      0      0      0
+ip_fib_alias           0      0     16  203    1 : tunables  120   60    0 : sla
+bdata      0      0      0
+ip_fib_hash            4     92     40   92    1 : tunables  120   60    0 : sla
+bdata      1      1      0
+ip_dst_cache           0      0    256   15    1 : tunables  120   60    0 : sla
+bdata      0      0      0
+arp_cache              0      0    128   30    1 : tunables  120   60    0 : sla
+bdata      0      0      0
+RAW                    2      7    512    7    1 : tunables   54   27    0 : sla
+bdata      1      1      0
+UDP                    0      0    512    7    1 : tunables   54   27    0 : sla
+bdata      0      0      0
+tw_sock_TCP            0      0    128   30    1 : tunables  120   60    0 : sla
+bdata      0      0      0
+request_sock_TCP       0      0    128   30    1 : tunables  120   60    0 : sla
+bdata      0      0      0
+TCP                    3      7   1088    7    2 : tunables   24   12    0 : sla
+bdata      1      1      0
+eventpoll_pwq          0      0     40   92    1 : tunables  120   60    0 : sla
+bdata      0      0      0
+eventpoll_epi          0      0    128   30    1 : tunables  120   60    0 : sla
+bdata      0      0      0
+blkdev_queue          26     27   1232    3    1 : tunables   24   12    0 : sla
+bdata      9      9      0
+blkdev_requests        8     18    216   18    1 : tunables  120   60    0 : sla
+bdata      1      1      0
+blkdev_ioc             5     78     48   78    1 : tunables  120   60    0 : sla
+bdata      1      1      0
+bio-0                  2     30    128   30    1 : tunables  120   60    0 : sla
+bdata      1      1      0
+biovec-256             2      2   3072    2    2 : tunables   24   12    0 : sla
+bdata      1      1      0
+biovec-128             0      0   1536    5    2 : tunables   24   12    0 : sla
+bdata      0      0      0
+biovec-64              0      0    768    5    1 : tunables   54   27    0 : sla
+bdata      0      0      0
+biovec-16              0      0    192   20    1 : tunables  120   60    0 : sla
+bdata      0      0      0
+biovec-4               0      0     64   59    1 : tunables  120   60    0 : sla
+bdata      0      0      0
+biovec-1               0      0     16  203    1 : tunables  120   60    0 : sla
+bdata      0      0      0
+sock_inode_cache      98    100    384   10    1 : tunables   54   27    0 : sla
+bdata     10     10      0
+skbuff_fclone_cache      0      0    384   10    1 : tunables   54   27    0 : s
+labdata      0      0      0
+skbuff_head_cache     26     40    192   20    1 : tunables  120   60    0 : sla
+bdata      2      2      0
+file_lock_cache        0      0     96   40    1 : tunables  120   60    0 : sla
+bdata      0      0      0
+proc_inode_cache    1183   1188    352   11    1 : tunables   54   27    0 : sla
+bdata    108    108      0
+sigqueue               0      0    144   27    1 : tunables  120   60    0 : sla
+bdata      0      0      0
+radix_tree_node     1519   1534    288   13    1 : tunables   54   27    0 : sla
+bdata    118    118      0
+bdev_cache             9     14    512    7    1 : tunables   54   27    0 : sla
+bdata      2      2      0
+sysfs_dir_cache     6074   6084     48   78    1 : tunables  120   60    0 : sla
+bdata     78     78      0
+mnt_cache             31     60    128   30    1 : tunables  120   60    0 : sla
+bdata      2      2      0
+filp                1590   1710    128   30    1 : tunables  120   60    0 : sla
+bdata     57     57      0
+inode_cache         3675   3684    328   12    1 : tunables   54   27    0 : sla
+bdata    307    307      0
+dentry              7671   7680    128   30    1 : tunables  120   60    0 : sla
+bdata    256    256      0
+names_cache           18     18   4096    1    1 : tunables   24   12    0 : sla
+bdata     18     18      0
+buffer_head         5392   5427     56   67    1 : tunables  120   60    0 : sla
+bdata     81     81      0
+vm_area_struct      9196   9196     88   44    1 : tunables  120   60    0 : sla
+bdata    209    209      0
+mm_struct             80     80    384   10    1 : tunables   54   27    0 : sla
+bdata      8      8      0
+fs_cache              87    113     32  113    1 : tunables  120   60    0 : sla
+bdata      1      1      0
+files_cache           80     80    192   20    1 : tunables  120   60    0 : sla
+bdata      4      4      0
+signal_cache         112    112    512    7    1 : tunables   54   27    0 : sla
+bdata     16     16      0
+sighand_cache        111    111   1344    3    1 : tunables   24   12    0 : sla
+bdata     37     37      0
+task_struct          416    416   1024    4    1 : tunables   54   27    0 : sla
+bdata    104    104      0
+cred_jar             225    360    128   30    1 : tunables  120   60    0 : sla
+bdata     12     12      0
+anon_vma            1091   1356      8  339    1 : tunables  120   60    0 : sla
+bdata      4      4      0
+pid                  455    472     64   59    1 : tunables  120   60    0 : sla
+bdata      8      8      0
+idr_layer_cache      168    182    152   26    1 : tunables  120   60    0 : sla
+bdata      7      7      0
+size-4194304           0      0 4194304    1 1024 : tunables    1    1    0 : sl
+abdata      0      0      0
+size-2097152           0      0 2097152    1  512 : tunables    1    1    0 : sl
+abdata      0      0      0
+size-1048576           0      0 1048576    1  256 : tunables    1    1    0 : sl
+abdata      0      0      0
+size-524288            0      0 524288    1  128 : tunables    1    1    0 : sla
+bdata      0      0      0
+size-262144            0      0 262144    1   64 : tunables    1    1    0 : sla
+bdata      0      0      0
+size-131072            2      2 131072    1   32 : tunables    8    4    0 : sla
+bdata      2      2      0
+size-65536             6      6  65536    1   16 : tunables    8    4    0 : sla
+bdata      6      6      0
+size-32768             0      0  32768    1    8 : tunables    8    4    0 : sla
+bdata      0      0      0
+size-16384            40     40  16384    1    4 : tunables    8    4    0 : sla
+bdata     40     40      0
+size-8192             18     18   8192    1    2 : tunables    8    4    0 : sla
+bdata     18     18      0
+size-4096            143    143   4096    1    1 : tunables   24   12    0 : sla
+bdata    143    143      0
+size-2048            172    172   2048    2    1 : tunables   24   12    0 : sla
+bdata     86     86      0
+size-1024            172    176   1024    4    1 : tunables   54   27    0 : sla
+bdata     44     44      0
+size-512             440    440    512    8    1 : tunables   54   27    0 : sla
+bdata     55     55      0
+size-256             600    600    256   15    1 : tunables  120   60    0 : sla
+bdata     40     40      0
+size-192             159    160    192   20    1 : tunables  120   60    0 : sla
+bdata      8      8      0
+size-128            2057   2070    128   30    1 : tunables  120   60    0 : sla
+bdata     69     69      0
+size-64             2544   2596     64   59    1 : tunables  120   60    0 : sla
+bdata     44     44      0
+size-32            11298  11859     64   59    1 : tunables  120   60    0 : sla
+bdata    201    201      0
+kmem_cache           105    120    128   30    1 : tunables  120   60    0 : sla
+bdata      4      4      0
+
+vmallocinfo
+0xbf000000-0xbf00f000   61440 module_alloc+0x50/0x60 pages=14 vmalloc
+0xbf013000-0xbf017000   16384 module_alloc+0x50/0x60 pages=3 vmalloc
+0xbf018000-0xbf01a000    8192 module_alloc+0x50/0x60 pages=1 vmalloc
+0xbf01b000-0xbf01e000   12288 module_alloc+0x50/0x60 pages=2 vmalloc
+0xdf84b000-0xdf84d000    8192 _VMallocWrapper+0x6c/0x74 pages=1 vmalloc
+0xdf84e000-0xdf852000   16384 _VMallocWrapper+0x6c/0x74 pages=3 vmalloc
+0xdf854000-0xdf856000    8192 __arm_ioremap_pfn+0x60/0x15c ioremap
+0xdf858000-0xdf85d000   20480 __arm_ioremap_pfn+0x60/0x15c ioremap
+0xdf85e000-0xdf860000    8192 __arm_ioremap_pfn+0x60/0x15c ioremap
+0xdf860000-0xdf871000   69632 __arm_ioremap_pfn+0x60/0x15c ioremap
+0xdf880000-0xdf899000  102400 __arm_ioremap_pfn+0x60/0x15c ioremap
+0xdf8a0000-0xdf8a9000   36864 __arm_ioremap_pfn+0x60/0x15c ioremap
+0xdf8c0000-0xdf8d5000   86016 __arm_ioremap_pfn+0x60/0x15c ioremap
+0xdf8e9000-0xdf8eb000    8192 _VMallocWrapper+0x6c/0x74 pages=1 vmalloc
+0xdf8ec000-0xdf8ee000    8192 _VMallocWrapper+0x6c/0x74 pages=1 vmalloc
+0xdf8ef000-0xdf8f1000    8192 _VMallocWrapper+0x6c/0x74 pages=1 vmalloc
+0xdf8f2000-0xdf8f4000    8192 _VMallocWrapper+0x6c/0x74 pages=1 vmalloc
+0xdf8f5000-0xdf8fa000   20480 _VMallocWrapper+0x6c/0x74 pages=4 vmalloc
+0xdf8fb000-0xdf8fd000    8192 _VMallocWrapper+0x6c/0x74 pages=1 vmalloc
+0xdf8fe000-0xdf900000    8192 _VMallocWrapper+0x6c/0x74 pages=1 vmalloc
+0xdf900000-0xdf9e5000  937984 __arm_ioremap_pfn+0x60/0x15c ioremap
+0xdf9e6000-0xdf9f4000   57344 _VMallocWrapper+0x6c/0x74 pages=13 vmalloc
+0xdf9f5000-0xdf9f7000    8192 _VMallocWrapper+0x6c/0x74 pages=1 vmalloc
+0xdf9f8000-0xdf9fd000   20480 __arm_ioremap_pfn+0x60/0x15c ioremap
+0xdf9fe000-0xdfa00000    8192 _VMallocWrapper+0x6c/0x74 pages=1 vmalloc
+0xdfa00000-0xdfb13000 1126400 __arm_ioremap_pfn+0x60/0x15c ioremap
+0xdfb14000-0xdfb21000   53248 _VMallocWrapper+0x6c/0x74 pages=12 vmalloc
+0xdfb22000-0xdfb31000   61440 _VMallocWrapper+0x6c/0x74 pages=14 vmalloc
+0xdfb35000-0xdfb37000    8192 _VMallocWrapper+0x6c/0x74 pages=1 vmalloc
+0xdfb3e000-0xdfb40000    8192 _VMallocWrapper+0x6c/0x74 pages=1 vmalloc
+0xdfb40000-0xdfb61000  135168 binder_mmap+0xbc/0x20c ioremap
+0xdfb62000-0xdfb64000    8192 _VMallocWrapper+0x6c/0x74 pages=1 vmalloc
+0xdfb65000-0xdfb67000    8192 _VMallocWrapper+0x6c/0x74 pages=1 vmalloc
+0xdfb68000-0xdfb7a000   73728 _VMallocWrapper+0x6c/0x74 pages=17 vmalloc
+0xdfb7b000-0xdfb7d000    8192 _VMallocWrapper+0x6c/0x74 pages=1 vmalloc
+0xdfb7e000-0xdfb80000    8192 _VMallocWrapper+0x6c/0x74 pages=1 vmalloc
+0xdfb81000-0xdfb83000    8192 _VMallocWrapper+0x6c/0x74 pages=1 vmalloc
+0xdfb84000-0xdfb86000    8192 _VMallocWrapper+0x6c/0x74 pages=1 vmalloc
+0xdfb87000-0xdfb89000    8192 _VMallocWrapper+0x6c/0x74 pages=1 vmalloc
+0xdfb8a000-0xdfb8c000    8192 _VMallocWrapper+0x6c/0x74 pages=1 vmalloc
+0xdfb8d000-0xdfb9f000   73728 _VMallocWrapper+0x6c/0x74 pages=17 vmalloc
+0xdfba0000-0xdfba2000    8192 _VMallocWrapper+0x6c/0x74 pages=1 vmalloc
+0xdfba3000-0xdfbb5000   73728 _VMallocWrapper+0x6c/0x74 pages=17 vmalloc
+0xdfbb6000-0xdfbb8000    8192 _VMallocWrapper+0x6c/0x74 pages=1 vmalloc
+0xdfbb9000-0xdfbbb000    8192 _VMallocWrapper+0x6c/0x74 pages=1 vmalloc
+0xdfbbc000-0xdfbbe000    8192 _VMallocWrapper+0x6c/0x74 pages=1 vmalloc
+0xdfbbf000-0xdfbc1000    8192 _VMallocWrapper+0x6c/0x74 pages=1 vmalloc
+0xdfbc2000-0xdfbc5000   12288 _VMallocWrapper+0x6c/0x74 pages=2 vmalloc
+0xdfbc6000-0xdfbc9000   12288 _VMallocWrapper+0x6c/0x74 pages=2 vmalloc
+0xdfbca000-0xdfbcc000    8192 _VMallocWrapper+0x6c/0x74 pages=1 vmalloc
+0xdfbcd000-0xdfbcf000    8192 _VMallocWrapper+0x6c/0x74 pages=1 vmalloc
+0xdfc00000-0xdfd13000 1126400 __arm_ioremap_pfn+0x60/0x15c ioremap
+0xdfd32000-0xdfd34000    8192 _VMallocWrapper+0x6c/0x74 pages=1 vmalloc
+0xdfd35000-0xdfd37000    8192 _VMallocWrapper+0x6c/0x74 pages=1 vmalloc
+0xdfd38000-0xdfd3a000    8192 _VMallocWrapper+0x6c/0x74 pages=1 vmalloc
+0xdfd3b000-0xdfd3d000    8192 _VMallocWrapper+0x6c/0x74 pages=1 vmalloc
+0xdfd3e000-0xdfd40000    8192 _VMallocWrapper+0x6c/0x74 pages=1 vmalloc
+0xdfd41000-0xdfd43000    8192 _VMallocWrapper+0x6c/0x74 pages=1 vmalloc
+0xdfd44000-0xdfd46000    8192 _VMallocWrapper+0x6c/0x74 pages=1 vmalloc
+0xdfe00000-0xdff13000 1126400 __arm_ioremap_pfn+0x60/0x15c ioremap
+0xe0000000-0xe0601000 6295552 __arm_ioremap_pfn+0x60/0x15c ioremap
+0xe0700000-0xe07ff000 1044480 binder_mmap+0xbc/0x20c ioremap
+0xe0800000-0xe0913000 1126400 __arm_ioremap_pfn+0x60/0x15c ioremap
+0xe0a00000-0xe0b13000 1126400 __arm_ioremap_pfn+0x60/0x15c ioremap
+0xe0c00000-0xe0d13000 1126400 __arm_ioremap_pfn+0x60/0x15c ioremap
+0xe0e00000-0xe0f13000 1126400 __arm_ioremap_pfn+0x60/0x15c ioremap
+0xe1000000-0xe1113000 1126400 __arm_ioremap_pfn+0x60/0x15c ioremap
+0xe1200000-0xe1313000 1126400 __arm_ioremap_pfn+0x60/0x15c ioremap
+0xe1400000-0xe152b000 1224704 __arm_ioremap_pfn+0x60/0x15c ioremap
+0xe1600000-0xe172b000 1224704 __arm_ioremap_pfn+0x60/0x15c ioremap
+0xe1800000-0xe192b000 1224704 __arm_ioremap_pfn+0x60/0x15c ioremap
+0xe1a00000-0xe1b2b000 1224704 __arm_ioremap_pfn+0x60/0x15c ioremap
+0xe1c00000-0xe1cff000 1044480 binder_mmap+0xbc/0x20c ioremap
+0xe1d00000-0xe1dff000 1044480 binder_mmap+0xbc/0x20c ioremap
+0xe1f00000-0xe1fff000 1044480 binder_mmap+0xbc/0x20c ioremap
+0xe2000000-0xe20ff000 1044480 binder_mmap+0xbc/0x20c ioremap
+0xe2100000-0xe21ff000 1044480 binder_mmap+0xbc/0x20c ioremap
+0xe2200000-0xe22ff000 1044480 binder_mmap+0xbc/0x20c ioremap
+0xe2300000-0xe23ff000 1044480 binder_mmap+0xbc/0x20c ioremap
+0xe2400000-0xe24ff000 1044480 binder_mmap+0xbc/0x20c ioremap
+0xe2500000-0xe25ff000 1044480 binder_mmap+0xbc/0x20c ioremap
+0xe2600000-0xe26ff000 1044480 binder_mmap+0xbc/0x20c ioremap
+0xe2700000-0xe27ff000 1044480 binder_mmap+0xbc/0x20c ioremap
+0xe2800000-0xe28ff000 1044480 binder_mmap+0xbc/0x20c ioremap
+0xe2900000-0xe29ff000 1044480 binder_mmap+0xbc/0x20c ioremap
+0xe2a00000-0xe2aff000 1044480 binder_mmap+0xbc/0x20c ioremap
+0xe2b00000-0xe2bff000 1044480 binder_mmap+0xbc/0x20c ioremap
+0xe2c00000-0xe2cff000 1044480 binder_mmap+0xbc/0x20c ioremap
+0xe2d00000-0xe2dff000 1044480 binder_mmap+0xbc/0x20c ioremap
+0xe2e00000-0xe2eff000 1044480 binder_mmap+0xbc/0x20c ioremap
+0xe2f00000-0xe2fff000 1044480 binder_mmap+0xbc/0x20c ioremap
+0xe3000000-0xe30ff000 1044480 binder_mmap+0xbc/0x20c ioremap
+0xe3100000-0xe31ff000 1044480 binder_mmap+0xbc/0x20c ioremap
+0xe3200000-0xe32ff000 1044480 binder_mmap+0xbc/0x20c ioremap
+0xe3300000-0xe33ff000 1044480 binder_mmap+0xbc/0x20c ioremap
+0xe3400000-0xe34ff000 1044480 binder_mmap+0xbc/0x20c ioremap
+0xe3500000-0xe35ff000 1044480 binder_mmap+0xbc/0x20c ioremap
+0xe3600000-0xe36ff000 1044480 binder_mmap+0xbc/0x20c ioremap
+0xe3700000-0xe37ff000 1044480 binder_mmap+0xbc/0x20c ioremap
+0xe3800000-0xe38ff000 1044480 binder_mmap+0xbc/0x20c ioremap
+0xe3900000-0xe39ff000 1044480 binder_mmap+0xbc/0x20c ioremap
+0xe3a00000-0xe3aff000 1044480 binder_mmap+0xbc/0x20c ioremap
+0xe3b00000-0xe3bff000 1044480 binder_mmap+0xbc/0x20c ioremap
+0xe3c00000-0xe3cff000 1044480 binder_mmap+0xbc/0x20c ioremap
+0xe3d00000-0xe3dff000 1044480 binder_mmap+0xbc/0x20c ioremap
+0xe3f00000-0xe3fff000 1044480 binder_mmap+0xbc/0x20c ioremap
+0xe4000000-0xe40ff000 1044480 binder_mmap+0xbc/0x20c ioremap
+0xe4100000-0xe41ff000 1044480 binder_mmap+0xbc/0x20c ioremap
+0xe4200000-0xe42ff000 1044480 binder_mmap+0xbc/0x20c ioremap
+0xe4300000-0xe43ff000 1044480 binder_mmap+0xbc/0x20c ioremap
+0xe4400000-0xe44ff000 1044480 binder_mmap+0xbc/0x20c ioremap
+0xe4600000-0xe46ff000 1044480 binder_mmap+0xbc/0x20c ioremap
+0xe4700000-0xe47ff000 1044480 binder_mmap+0xbc/0x20c ioremap
+0xe4800000-0xe48ff000 1044480 binder_mmap+0xbc/0x20c ioremap
+0xe4900000-0xe49ff000 1044480 binder_mmap+0xbc/0x20c ioremap
+0xe4a00000-0xe4aff000 1044480 binder_mmap+0xbc/0x20c ioremap
+
+zoneinfo
+Node 0, zone   Normal
+  pages free     47218
+        min      711
+        low      888
+        high     1066
+        scanned  0 (aa: 0 ia: 0 af: 0 if: 0)
+        spanned  127488
+        present  126492
+    nr_free_pages 47218
+    nr_inactive_anon 0
+    nr_active_anon 27623
+    nr_inactive_file 26951
+    nr_active_file 6276
+    nr_unevictable 0
+    nr_mlock     0
+    nr_anon_pages 27479
+    nr_mapped    17014
+    nr_file_pages 33374
+    nr_dirty     0
+    nr_writeback 0
+    nr_slab_reclaimable 1018
+    nr_slab_unreclaimable 1742
+    nr_page_table_pages 3371
+    nr_unstable  0
+    nr_bounce    0
+    nr_vmscan_write 0
+    nr_writeback_temp 0
+        protection: (0, 0)
+  pagesets
+    cpu: 0
+              count: 103
+              high:  186
+              batch: 31
+  all_unreclaimable: 0
+  prev_priority:     12
+  start_pfn:         527360
+  inactive_ratio:    1
+
+vmstat
+nr_free_pages 47218
+nr_inactive_anon 0
+nr_active_anon 27625
+nr_inactive_file 26951
+nr_active_file 6276
+nr_unevictable 0
+nr_mlock 0
+nr_anon_pages 27481
+nr_mapped 17014
+nr_file_pages 33374
+nr_dirty 0
+nr_writeback 0
+nr_slab_reclaimable 1018
+nr_slab_unreclaimable 1742
+nr_page_table_pages 3371
+nr_unstable 0
+nr_bounce 0
+nr_vmscan_write 0
+nr_writeback_temp 0
+pgpgin 16297
+pgpgout 107
+pswpin 0
+pswpout 0
+pgalloc_normal 118733
+pgalloc_movable 0
+pgfree 166052
+pgactivate 6283
+pgdeactivate 0
+pgfault 254048
+pgmajfault 1475
+pgrefill_normal 0
+pgrefill_movable 0
+pgsteal_normal 0
+pgsteal_movable 0
+pgscan_kswapd_normal 0
+pgscan_kswapd_movable 0
+pgscan_direct_normal 0
+pgscan_direct_movable 0
+pginodesteal 0
+slabs_scanned 0
+kswapd_steal 0
+kswapd_inodesteal 0
+pageoutrun 0
+allocstall 0
+pgrotated 0
+unevictable_pgs_culled 0
+unevictable_pgs_scanned 0
+unevictable_pgs_rescued 0
+unevictable_pgs_mlocked 0
+unevictable_pgs_munlocked 0
+unevictable_pgs_cleared 0
+unevictable_pgs_stranded 0
+unevictable_pgs_mlockfreed 0
+
+pagetypeinfo
+Page block order: 10
+Pages per block:  1024
+
+Free pages count per migrate type at order       0      1      2      3      4
+    5      6      7      8      9     10
+Node    0, zone   Normal, type    Unmovable      0      0      1      0      1
+    9      5      2      1      0      0
+Node    0, zone   Normal, type  Reclaimable      1      0      0      1      0
+    1      1      1      1      1      0
+Node    0, zone   Normal, type      Movable    111     47     24      9      2
+    0      0      1      0      1     42
+Node    0, zone   Normal, type      Reserve      0      0      0      0      0
+    0      0      0      0      0      1
+Node    0, zone   Normal, type      Isolate      0      0      0      0      0
+    0      0      0      0      0      0
+
+Number of blocks type     Unmovable  Reclaimable      Movable      Reserve
+Isolate
+Node 0, zone   Normal           14            2          108            1
+     0
+
+buddyinfo
+Node 0, zone   Normal    112     47     25     10      3     10      6      4
+   2      2     43
+
+kallsyms
+[very long list of stuff]
+bf005ff0 t ReadDataAvailable    [netmux]
+c0097958 u wake_lock    [netmux]
+bf000514 t alloc_commbuff       [netmux]
+c01c1540 u device_destroy       [netmux]
+c011121c u remove_proc_entry    [netmux]
+bf00095c t ShutdownConfigUserInterface  [netmux]
+bf00294c t DestroyDirectInterface       [netmux]
+bf005d18 t ApplyDataHdr [netmux]
+bf004afc t TTYInform    [netmux]
+c007e15c u schedule_work        [netmux]
+c015be84 u __aeabi_uidivmod     [netmux]
+c02d4a5c u skb_clone    [netmux]
+c03d08d8 u interruptible_sleep_on       [netmux]
+bf0087dc t NetmuxLogInit        [netmux]
+bf00db6c b netmux_configdata    [netmux]
+bf00543c t DestroyInterfaceLibrary      [netmux]
+bf006954 t DisableChannel       [netmux]
+bf005368 t UnregisterInterface  [netmux]
+bf003708 t CreateNetworkInterface       [netmux]
+bf006210 t ChannelSignal        [netmux]
+bf002764 t DirectOpen   [netmux]
+bf002228 t DirectWrite  [netmux]
+bf007fb0 t ProcessReceiveQueues [netmux]
+bf00dbc8 b netmux_receive_wakelock      [netmux]
+bf00061c t commbuff_split       [netmux]
+c0082344 u autoremove_wake_function     [netmux]
+bf0007bc t alloc_mem    [netmux]
+bf0003bc t queuefront_commbuff  [netmux]
+bf0042d0 t TTYClose     [netmux]
+c009682c u wake_lock_destroy    [netmux]
+bf0079d8 t ReceiveCommand       [netmux]
+bf001b5c t DestroyConfigInterface       [netmux]
+c0162244 u strlen       [netmux]
+c015a5a0 u __copy_to_user       [netmux]
+bf006cec t DestroyMUX   [netmux]
+bf00dc10 b netmux_class [netmux]
+bf001d28 t ConfigInform [netmux]
+bf005b1c t TransmitCredit       [netmux]
+bf006720 t SendData     [netmux]
+c015a188 u __copy_from_user     [netmux]
+bf000238 t shutdown_utilities   [netmux]
+c00c6384 u __kmalloc    [netmux]
+bf000a08 t StartupConfigUserInterface   [netmux]
+bf007bdc t CommBuffReleased     [netmux]
+c02d4138 u skb_queue_head       [netmux]
+bf000818 t int_alloc_mem        [netmux]
+
+modules
+sec 4760 0 - Live 0xbf01b000
+modem_pm_driver 2768 2 - Live 0xbf018000
+netmux_linkdriver 10480 0 [permanent], Live 0xbf013000
+netmux 56344 19 netmux_linkdriver, Live 0xbf000000
+
+timer_list
+Timer List Version: v0.4
+HRTIMER_MAX_CLOCK_BASES: 2
+now at 1436632842973 nsecs
+
+cpu: 0
+ clock 0:
+  .base:       c04e6838
+  .index:      0
+  .resolution: 1 nsecs
+  .get_time:   ktime_get_real
+  .offset:     1347725364027557327 nsecs
+active timers:
+ #0: <c058ef78>, alarm_timer_triggered, S:01
+ # expires at 1347726840000000000-1347726840000000000 nsecs [in 1347725403367157
+027 to 1347725403367157027 nsecs]
+ #1: <c058efe8>, alarm_timer_triggered, S:01
+ # expires at 1347728102317557327-1347728102317557327 nsecs [in 1347726665684714
+354 to 1347726665684714354 nsecs]
+ #2: <c058ef40>, alarm_timer_triggered, S:01
+ # expires at 1347750000000000000-1347750000000000000 nsecs [in 1347748563367157
+027 to 1347748563367157027 nsecs]
+ #3: <c058efb0>, alarm_timer_triggered, S:01
+ # expires at 1347811873871557327-1347811873871557327 nsecs [in 1347810437238714
+354 to 1347810437238714354 nsecs]
+ clock 1:
+  .base:       c04e6868
+  .index:      1
+  .resolution: 1 nsecs
+  .get_time:   ktime_get
+  .offset:     0 nsecs
+active timers:
+ #0: <c0569f70>, tick_sched_timer, S:01
+ # expires at 1436640625000-1436640625000 nsecs [in 7782027 to 7782027 nsecs]
+ #1: <d9909e00>, hrtimer_wakeup, S:01
+ # expires at 1436705871536-1436705921536 nsecs [in 73028563 to 73078563 nsecs]
+ #2: <def7db58>, hrtimer_wakeup, S:01
+ # expires at 1438994720409-1439004720409 nsecs [in 2361877436 to 2371877436 nse
+cs]
+ #3: <de731f18>, hrtimer_wakeup, S:01
+ # expires at 1456163970899-1456164020899 nsecs [in 19531127926 to 19531177926 n
+secs]
+ #4: <d9187e00>, hrtimer_wakeup, S:01
+ # expires at 1472130584672-1472130634672 nsecs [in 35497741699 to 35497791699 n
+secs]
+ #5: <d2f1be00>, hrtimer_wakeup, S:01
+ # expires at 1555761993356-1555762043356 nsecs [in 119129150383 to 119129200383
+ nsecs]
+ #6: <d9119e00>, hrtimer_wakeup, S:01
+ # expires at 1800000342009-1800000392009 nsecs [in 363367499036 to 363367549036
+ nsecs]
+ #7: <de331aa0>, hrtimer_wakeup, S:01
+ # expires at 5012579559286-5012579609286 nsecs [in 3575946716313 to 35759467663
+13 nsecs]
+ #8: <d914fe00>, hrtimer_wakeup, S:01
+ # expires at 10113392312224-10113392362224 nsecs [in 8676759469251 to 867675951
+9251 nsecs]
+ #9: <dd3aff18>, hrtimer_wakeup, S:01
+ # expires at 100015472167927-100015472217927 nsecs [in 98578839324954 to 985788
+39374954 nsecs]
+ #10: <de5c3b58>, hrtimer_wakeup, S:01
+ # expires at 100020930206267-100021030206267 nsecs [in 98584297363294 to 985843
+97363294 nsecs]
+ #11: <dd3adf18>, hrtimer_wakeup, S:01
+ # expires at 1000015905487032-1000015905537032 nsecs [in 998579272644059 to 998
+579272694059 nsecs]
+ #12: <de131f18>, hrtimer_wakeup, S:01
+ # expires at 16777230494110064-16777230494160064 nsecs [in 16775793861267091 to
+ 16775793861317091 nsecs]
+ #13: <dcd67f18>, hrtimer_wakeup, S:01
+ # expires at 16777231645477265-16777231645527265 nsecs [in 16775795012634292 to
+ 16775795012684292 nsecs]
+ #14: <deca1f18>, hrtimer_wakeup, S:01
+ # expires at 16777232458373986-16777232458423986 nsecs [in 16775795825531013 to
+ 16775795825581013 nsecs]
+ #15: <dd75de00>, hrtimer_wakeup, S:01
+ # expires at 633437461969369281-633437461969419281 nsecs [in 633436025336526308
+ to 633436025336576308 nsecs]
+ #16: <dd75fe00>, hrtimer_wakeup, S:01
+ # expires at 633437476540414205-633437476540464205 nsecs [in 633436039907571232
+ to 633436039907621232 nsecs]
+  .expires_next   : 1436640625000 nsecs
+  .hres_active    : 1
+  .nr_events      : 26683
+  .nohz_mode      : 2
+  .idle_tick      : 1436625000000 nsecs
+  .tick_stopped   : 0
+  .idle_jiffies   : 145487
+  .idle_calls     : 18971
+  .idle_sleeps    : 11012
+  .idle_entrytime : 1436617828324 nsecs
+  .idle_waketime  : 1436617889359 nsecs
+  .idle_exittime  : 1436617919876 nsecs
+  .idle_sleeptime : 1310367356257 nsecs
+  .last_jiffies   : 145487
+  .next_jiffies   : 145664
+  .idle_expires   : 1438000000000 nsecs
+jiffies: 145489
+
+
+Tick Device: mode:     1
+Per CPU device: 0
+Clock Event Device: gp timer
+ max_delta_ns:   2147483647
+ min_delta_ns:   91553
+ mult:           140737
+ shift:          32
+ mode:           3
+ next_event:     1436640625000 nsecs
+ set_next_event: omap2_gp_timer_set_next_event
+ set_mode:       omap2_gp_timer_set_mode
+ event_handler:  hrtimer_interrupt
+
+iomem
+00000000-00000000 : omap2-nand.0
+10000000-10000fff : omap2-nand
+48060000-4806003f : i2c_omap.3
+  48060000-4806003f : i2c_omap
+48064800-48064bff : ehci-omap.0
+4806a000-4806a3ff : omap-uart.1
+  4806a000-4806a3ff : omap-uart
+4806c000-4806c3ff : omap-uart.2
+  4806c000-4806c3ff : omap-uart
+48070000-4807003f : i2c_omap.1
+  48070000-4807003f : i2c_omap
+48072000-4807203f : i2c_omap.2
+  48072000-4807203f : i2c_omap
+48098000-480980ff : omap2_mcspi.1
+  48098000-480980ff : omap2_mcspi.1
+4809a000-4809a0ff : omap2_mcspi.2
+  4809a000-4809a0ff : omap2_mcspi.2
+4809c000-4809c1ff : mmci-omap-hs.0
+  4809c000-4809c1ff : mmci-omap-hs
+480ab000-480acfff : musb_hdrc
+480b2000-480b201c : omap_hdq.0
+480b4000-480b41ff : TIWLAN_SDIO.1
+480b8000-480b80ff : omap2_mcspi.3
+  480b8000-480b80ff : omap2_mcspi.3
+480ba000-480ba0ff : omap2_mcspi.4
+  480ba000-480ba0ff : omap2_mcspi.4
+480bc000-480bdb70 : omap34xxcam
+  480bc000-480bdb70 : omap34xxcam
+48314000-4831404f : omap_wdt
+  48314000-4831404f : omap_wdt
+49020000-490203ff : omap-uart.3
+  49020000-490203ff : omap-uart
+70000000-70ffffff : vrfb
+71000000-71ffffff : vrfb
+72000000-72ffffff : vrfb
+73000000-73ffffff : vrfb
+74000000-74ffffff : vrfb
+75000000-75ffffff : vrfb
+76000000-76ffffff : vrfb
+77000000-77ffffff : vrfb
+78000000-78ffffff : vrfb
+79000000-79ffffff : vrfb
+7a000000-7affffff : vrfb
+7b000000-7bffffff : vrfb
+7c000000-7cffffff : vrfb
+7d000000-7dffffff : vrfb
+7e000000-7effffff : vrfb
+7f000000-7fffffff : vrfb
+80c00000-9fdfffff : System RAM
+  80c3e000-810d1fff : Kernel text
+  810d2000-812f7fdb : Kernel data
+
+ioports
+
+execdomains
+0-0     Linux                   [kernel]
+
+schedstat
+version 14
+timestamp 171215
+cpu0 0 0 0 32 0 404952 12483 0 0 135283630436 207172332419 388492
+
+sched_debug
+Sched Debug Version: v0.08, 2.6.29-omap1 #1
+now at 1688055.114703 msecs
+  .sysctl_sched_latency                    : 10.000000
+  .sysctl_sched_min_granularity            : 4.000000
+  .sysctl_sched_wakeup_granularity         : 2.000000
+  .sysctl_sched_child_runs_first           : 0.000000
+  .sysctl_sched_features                   : 24189
+
+cpu#0
+  .nr_running                    : 1
+  .load                          : 1024
+  .nr_switches                   : 408955
+  .nr_load_updates               : 20452
+  .nr_uninterruptible            : 0
+  .jiffies                       : 177671
+  .next_balance                  : 0.000000
+  .curr->pid                     : 2086
+  .clock                         : 1696734.680175
+  .cpu_load[0]                   : 1024
+  .cpu_load[1]                   : 1677
+  .cpu_load[2]                   : 1795
+  .cpu_load[3]                   : 1465
+  .cpu_load[4]                   : 1139
+  .yld_exp_empty                 : 0
+  .yld_act_empty                 : 0
+  .yld_both_empty                : 0
+  .yld_count                     : 32
+  .sched_switch                  : 0
+  .sched_count                   : 412934
+  .sched_goidle                  : 12768
+  .ttwu_count                    : 0
+  .ttwu_local                    : 0
+  .bkl_count                     : 33027
+
+cfs_rq[0]:/
+  .exec_clock                    : 127020.233931
+  .MIN_vruntime                  : 0.000001
+  .min_vruntime                  : 190603.714408
+  .max_vruntime                  : 0.000001
+  .spread                        : 0.000000
+  .spread0                       : 0.000000
+  .nr_running                    : 1
+  .load                          : 1024
+  .nr_spread_over                : 1118
+
+rt_rq[0]:/
+  .rt_nr_running                 : 0
+  .rt_throttled                  : 0
+  .rt_time                       : 0.000000
+  .rt_runtime                    : 950.000000
+
+runnable tasks:
+            task   PID         tree-key  switches  prio     exec-runtime
+ sum-exec        sum-sleep
+--------------------------------------------------------------------------------
+--------------------------
+R            cat  2086    190603.714408         1   120    190603.714408
+10.284424         0.000000 /
+
+phoneid
+34ce000400000000040395021400900a
+
+bootinfo
+POWERUPREASON : 0x00004000
+MBM_VERSION : 0x00009110
+MBM_LOADER_VERSION : 0x00009110
+FLAT_DEV_TREE_ADDRESS : 0xffffffff
+BATTERY_STATUS_AT_BOOT : 0x0001
+CID_RECOVER_BOOT : 0x00
+
+cpu
+[invalid length]
+
+misc
+ 36 sec
+ 37 network_throughput
+ 38 network_latency
+ 39 cpu_dma_latency
+ 40 log_kernel
+ 41 log_radio
+ 42 log_events
+ 43 log_main
+ 44 binder
+130 watchdog
+ 45 cpcap_mot_rtc
+ 46 alarm
+ 47 sfh7743
+ 48 keychord
+223 uinput
+ 49 android_adb
+ 50 mtp
+ 51 usb_device_mode
+ 52 android_adb_enable
+241 ipc_api_short
+240 ipc_api_data
+ 53 camera0
+ 54 clock_32k
+ 55 kxtf9
+ 56 akm8973_aot
+ 57 akm8973_dev
+ 58 omap-panel
+ 59 ashmem
+ 60 wakeup_timer
+ 61 cpcap_batt
+ 62 cpcap_uc
+ 63 cpcap
+
+fb
+0 omapfb
+
+reset_proc
+0
+
+wakelocks
+name    count   expire_count    wake_count      active_since    total_time
+sleep_time      max_time        last_change
+"usb"   1       0       0       2014410369772   2014410369772   1864409606918
+2014410369772   3461975145
+"mmc_delayed_work"      1       1       0       0       852447421       0
+852447421       3264923131
+"omap_serial"   1       1       0       0       5346099838      0       53460998
+38      16552520714
+"event3-1555"   2       2       0       0       69370452853     0       64179565
+409     63937805143
+"ehci_rwu"      3       3       0       0       1499114988      1499115003
+506256114       1146113311710
+"GKI_LOCK_TIMER_1"      194     12      0       0       1868560792      21469117
+8       100707998       1146148467960
+
+irq
+invalid length
+
+cgroups
+#subsys_name    hierarchy       num_cgroups     enabled
+debug   0       1       1
+cpu     0       1       1
+cpuacct 0       1       1
+freezer 0       1       1
+
+sys
+invalid length
+
+bus
+invalid length
+
+device-tree
+invalid length
+
+tty
+invalid length
+
+driver
+invalid length
+
+fs
+invalid length
+
+sysvipc
+invalid length
+
+net
+invalid length
+
+mounts
+invalid length
+
+self
+invalid length
+
+[I'm not gonna bother with the numbers]
+1
+2
+3
+4
+5
+6
+11
+188
+192
+212
+215
+275
+281
+294
+301
+331
+332
+333
+335
+420
+491
+494
+551
+561
+575
+578
+579
+580
+597
+613
+622
+638
+642
+664
+666
+687
+696
+1520
+1529
+1530
+1531
+1532
+1535
+1536
+1539
+1541
+1542
+1543
+1547
+1548
+1551
+1552
+1554
+1555
+1556
+1557
+1558
+1560
+1563
+1564
+1565
+1566
+1585
+1628
+1681
+1682
+1684
+1689
+1692
+1694
+1713
+1716
+1749
+1760
+1761
+1778
+1791
+1796
+1801
+1809
+1814
+1821
+1832
+1848
+1856
+1864
+1874
+1885
+1890
+1900
+1912
+1919
+1932
+1940
+1947
+1960
+1966
+1972
+1981
+1992
+1997
+2005
+2015
+2070
+2076
+2083
+2088
+2144
+2240
+2254
+2271
+2425
+2558
+2625
+2655
+2662
+2668
+2695
+3356
+3589
+3842
+4003
+4006
+4007
+4045
+4080
+4091
