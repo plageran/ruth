@@ -8,12 +8,12 @@ data partition:		179437568 Bytes
 ram:			487272 kB
 icc card:		false
 
-device id:		353646040104658
+device id:		
 android id:		unknown
-phone id:		34ce000400000000040395021400900a
+phone id:		
 sim serial:
 phone number:
-device serial:		TA418006B6
+device serial:		
 
 Operator Numeric:	65501
 Phone type:		GSM
