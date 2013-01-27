@@ -58,9 +58,9 @@ JS_ENGINE := v8
 BOARD_WPA_SUPPLICANT_DRIVER := WEXT
 WPA_SUPPLICANT_VERSION      := VER_0_5_X
 BOARD_WLAN_DEVICE           := bcm4329
-WIFI_DRIVER_MODULE_PATH     := "/system/lib/modules/dhd.ko"
-WIFI_DRIVER_MODULE_ARG      := "firmware_path=/system/etc/wifi/sdio-g-cdc-reclaim-wme.bin nvram_path=/system/etc/wifi/nvram.txt"
-WIFI_DRIVER_MODULE_NAME     := "dhd"
+WIFI_DRIVER_MODULE_PATH     := "/system/lib/modules/tiwlan_drv.ko"
+WIFI_DRIVER_MODULE_ARG      := "firmware_path=/system/etc/wifi/fw_wlan1271.bin nvram_path=/system/etc/wifi/nvram.txt"
+WIFI_DRIVER_MODULE_NAME     := "tiwlan"
 
 # Bluetooth
 BOARD_HAVE_BLUETOOTH := true
@@ -83,7 +83,7 @@ BOARD_HAVE_BLUETOOTH_BCM := true
 #BOARD_RECOVERYIMAGE_PARTITION_SIZE := 0x00480000
 #BOARD_SYSTEMIMAGE_PARTITION_SIZE := 0x0b260000   # limited so we enforce room to grow
 #BOARD_USERDATAIMAGE_PARTITION_SIZE := 0x0ab20000
-#BOARD_FLASH_BLOCK_SIZE := 131072
+#BOARD_FLASH_BLOCK_SIZE := 131072  #need to confirm still
 
 # System
 WITH_DEXPREOPT := false
@@ -97,7 +97,7 @@ BOARD_EGL_CFG := device/motorola/ruth/egl.cfg
 TARGET_SF_NEEDS_REAL_DIMENSIONS := true
 TARGET_ELECTRONBEAM_FRAMES := 10
 
-# GPS
+# GPS must be checked
 BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := msm7k
 BOARD_VENDOR_QCOM_GPS_LOC_API_AMSS_VERSION := 3200
 BOARD_VENDOR_QCOM_AMSS_VERSION := 3200
